@@ -33,8 +33,8 @@ public class Homepage {
         login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //frame.dispose();
-                //new Login();
+                frame.dispose();
+                new Login();
             }
         });
         navbar.add(login, BorderLayout.EAST);

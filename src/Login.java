@@ -117,6 +117,13 @@ public class Login{
 
         toHomepage = new JButton("⟸Homepage");
         toHomepage.setBounds(0, 375, 500, 90);
+        toHomepage.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+                new Homepage();
+            }
+        });
 
 
         // Add the components to the frame
