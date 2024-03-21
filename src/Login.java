@@ -20,6 +20,8 @@ public class Login{
     public JButton submit;
     JButton reset;
 
+    JButton toHomepage;
+
     JOptionPane optionPane;
 
     boolean isNotRobot;
@@ -113,6 +115,8 @@ public class Login{
             }
         });
 
+        toHomepage = new JButton("⟸Homepage");
+        toHomepage.setBounds(0, 375, 500, 90);
 
 
         // Add the components to the frame
@@ -123,6 +127,7 @@ public class Login{
         frame.add(robot);
         frame.add(submit);
         frame.add(reset);
+        frame.add(toHomepage);
 
         // Set up the JFrame for Login
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
